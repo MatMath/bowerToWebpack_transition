@@ -7,6 +7,8 @@ Traing on this small application to move it from Bower & Angular1 to Webpact4 be
 - Add lowdash to the build to represent a dependency that cannot be move to npm yet (custom module) via Bower.
 - Install webpack & webpack-cli & add the basic configuration file.
 - Break everything
+- Move the Bower dependency to a NPM/Package.js dependency.
+- Converting the module from src to import.
 -
 
 ## Ressources
