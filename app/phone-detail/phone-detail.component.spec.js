@@ -1,9 +1,12 @@
 'use strict';
-
+var lowdash = {};
 describe('phoneDetail', function() {
 
   // Load the module that contains the `phoneDetail` component before each test
-  beforeEach(module('phoneDetail'));
+  beforeEach(function(){
+    module('phoneDetail');
+    module('ngLodash');
+  });
 
   // Test the controller
   describe('PhoneDetailController', function() {
@@ -13,8 +16,9 @@ describe('phoneDetail', function() {
       images: ['image/url1.png', 'image/url2.png']
     };
 
-    beforeEach(inject(function($componentController, _$httpBackend_, $routeParams) {
+    beforeEach(inject(function($componentController, _$httpBackend_, $routeParams, _lodash_) {
       $httpBackend = _$httpBackend_;
+      _ = _lodash_;
       $httpBackend.expectGET('phones/xyz.json').respond(xyzPhoneData);
 
       $routeParams.phoneId = 'xyz';
