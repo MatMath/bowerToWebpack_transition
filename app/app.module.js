@@ -10,18 +10,19 @@ import { config } from './app.config';
 
 // Custom package
 import { core } from './core/core.module';
-import phoneDetail from './phone-detail/phone-detail.module';
-import phoneList from './phone-list/phone-list.module';
+import { phoneList } from './phone-list/phone-list.module';
+
+// import phoneDetail from './phone-detail/phone-detail.module';
 
 // Define the `phonecatApp` module
 const appModule = angular.module('phonecatApp', [
   'ngAnimate',
   'ngRoute',
-  'core'
+  'core',
+  'phoneList'
 ]);
 // ,
 // 'phoneDetail',
-// 'phoneList'
 appModule.config(['$locationProvider', '$routeProvider', config]);
 
 
