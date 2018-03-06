@@ -1,5 +1,6 @@
 'use strict';
 // Global package
+
 import angular from 'angular';
 import ngAnimate from 'angular-animate';
 import ngRoute from 'angular-route';
@@ -8,18 +9,19 @@ import ngRoute from 'angular-route';
 import { config } from './app.config';
 
 // Custom package
-const core = require('./core/core.module');
-const phoneDetail = require('./phone-detail/phone-detail.module');
-const phoneList = require('./phone-list/phone-list.module');
+import { core } from './core/core.module';
+import phoneDetail from './phone-detail/phone-detail.module';
+import phoneList from './phone-list/phone-list.module';
 
 // Define the `phonecatApp` module
 const appModule = angular.module('phonecatApp', [
   'ngAnimate',
   'ngRoute',
-  'core',
-  'phoneDetail',
-  'phoneList'
+  'core'
 ]);
+// ,
+// 'phoneDetail',
+// 'phoneList'
 appModule.config(['$locationProvider', '$routeProvider', config]);
 
 
