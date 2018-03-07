@@ -1,21 +1,21 @@
 'use strict';
+import lodash from 'lodash';
+import 'angular-route';
 
-// Register `phoneDetail` component, along with its associated controller and template
-angular.
-  module('phoneDetail').
-  component('phoneDetail', {
-    templateUrl: 'phone-detail/phone-detail.template.html',
-    controller: ['$routeParams', 'Phone', 'lodash',
-      function PhoneDetailController($routeParams, Phone, _) {
-        var self = this;
-        self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-          self.setImage(phone.images[0]);
-        });
+const phoneDetailCmpt = {
+  templateUrl: 'phone-detail/phone-detail.template.html',
+  controller: ['$routeParams', 'Phone', 'lodash',
+    function PhoneDetailController($routeParams, Phone, _) {
+      var self = this;
+      self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
+        self.setImage(phone.images[0]);
+      });
 
-        self.setImage = function setImage(imageUrl) {
-          self.mainImageUrl = imageUrl;
-        };
-        console.log('My phone is:', _.isUndefined(self));
-      }
-    ]
-  });
+      self.setImage = function setImage(imageUrl) {
+        self.mainImageUrl = imageUrl;
+      };
+    }
+  ]
+}
+
+export { phoneDetailCmpt };

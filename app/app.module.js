@@ -11,19 +11,15 @@ import { config } from './app.config';
 // Custom package
 import { core } from './core/core.module';
 import { phoneList } from './phone-list/phone-list.module';
-
-// import phoneDetail from './phone-detail/phone-detail.module';
+import { phoneDetail } from './phone-detail/phone-detail.module';
 
 // Define the `phonecatApp` module
 const appModule = angular.module('phonecatApp', [
   'ngAnimate',
   'ngRoute',
   'core',
-  'phoneList'
+  'phoneList',
+  'phoneDetail'
 ]);
-// ,
-// 'phoneDetail',
+
 appModule.config(['$locationProvider', '$routeProvider', config]);
-
-
-// https://github.com/angular/angular.io/blob/master/public/docs/_examples/upgrade-module/ts/src/app/divide-routes/app.module.ts
