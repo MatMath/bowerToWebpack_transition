@@ -8,6 +8,11 @@ module.exports = {
     contentBase: './app',
     watchContentBase: true
   },
+  module: {
+    rules: [
+      { test: /\.css$/, use: 'css-loader' }
+    ]
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')

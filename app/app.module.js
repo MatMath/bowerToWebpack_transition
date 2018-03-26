@@ -1,12 +1,15 @@
 'use strict';
 // Global package
-
 import angular from 'angular';
 import ngAnimate from 'angular-animate';
 import ngRoute from 'angular-route';
 
 // Config
 import { config } from './app.config';
+
+// CSS
+import './app.css';
+import './app.animations.css';
 
 // Custom package
 import { core } from './core/core.module';

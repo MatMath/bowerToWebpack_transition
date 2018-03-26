@@ -13,6 +13,7 @@ Training on this small application to move it from Bower & Angular1 to npm & Web
 - Add webpack-dev-server to serve / follow the progress.
 - Modify the Index.html to load the bundle instead of all dependency.
 - Update the app.module.js to use Import structure.
+- Add module to handle CSS loading & Adapt the config to load them.
 
 ## Big challenge:
 - Fighting on why sometime "export {}" and sometime "module.exports = {}" works.
