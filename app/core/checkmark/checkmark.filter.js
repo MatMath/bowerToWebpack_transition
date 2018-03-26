@@ -6,4 +6,4 @@ const checkmark = function() {
     };
   };
 
-module.export = { checkmark }
+export { checkmark };
