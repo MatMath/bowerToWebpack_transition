@@ -8,6 +8,7 @@ import ngRoute from 'angular-route';
 import { config } from './app.config';
 
 // CSS
+// import './bower_components/bootstrap/dist/css/bootstrap.css'; // That does not work and I have no idea why, Not the proper module to load it but... ????
 import './app.css';
 import './app.animations.css';
 

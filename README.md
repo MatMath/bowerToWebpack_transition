@@ -15,6 +15,10 @@ Training on this small application to move it from Bower & Angular1 to npm & Web
 - Update the app.module.js to use Import structure.
 - Add module to handle CSS loading & Adapt the config to load them.
 
+## Next:
+- Understand why I can load Bootstrap via the html, but it do not work if I Import it.
+- Maybe bundle the Whole CSS into it's own file for HTML loading?
+
 ## Big challenge:
 - Fighting on why sometime "export {}" and sometime "module.exports = {}" works.
 - Trying to keep as much as the initial structure as possible.
