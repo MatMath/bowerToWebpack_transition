@@ -14,6 +14,8 @@ Training on this small application to move it from Bower & Angular1 to npm & Web
 - Modify the Index.html to load the bundle instead of all dependency.
 - Update the app.module.js to use Import structure.
 - Add module to handle CSS loading & Adapt the config to load them.
+- Fix the Animation.
+- Compare with Original and give yourself a tap in the back.
 
 ## Next:
 - Understand why I can load Bootstrap via the html, but it do not work if I Import it.

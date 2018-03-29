@@ -16,6 +16,7 @@ import './app.animations.css';
 import { core } from './core/core.module';
 import { phoneList } from './phone-list/phone-list.module';
 import { phoneDetail } from './phone-detail/phone-detail.module';
+import { phoneAnimationFactory } from './app.animations';
 
 // Define the `phonecatApp` module
 const appModule = angular.module('phonecatApp', [
@@ -27,3 +28,4 @@ const appModule = angular.module('phonecatApp', [
 ]);
 
 appModule.config(['$locationProvider', '$routeProvider', config]);
+appModule.animation('.phone', phoneAnimationFactory);

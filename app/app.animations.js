@@ -1,8 +1,6 @@
 'use strict';
 
-angular.
-  module('phonecatApp').
-  animation('.phone', function phoneAnimationFactory() {
+const phoneAnimationFactory = function() {
     return {
       addClass: animateIn,
       removeClass: animateOut
@@ -40,4 +38,6 @@ angular.
         if (wasCanceled) element.stop();
       };
     }
-  });
+  };
+
+export { phoneAnimationFactory };
