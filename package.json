@@ -1,8 +1,8 @@
 {
-  "name": "angular-phonecat",
+  "name": "bowerToWebpack_transition",
   "private": true,
   "version": "0.0.0",
-  "description": "A tutorial application for AngularJS",
+  "description": "A test/training to move AngularJs from Bower to Webpack4",
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "devDependencies": {

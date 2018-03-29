@@ -30,5 +30,6 @@ Webpack 2 & 3.
 Good video to get started with Webpack and How Import/export works: https://egghead.io/lessons/angularjs-angular-with-webpack-requiring-directives
 https://github.com/preboot/angularjs-webpack/blob/master/webpack.config.js
 http://angular-tips.com/blog/2015/06/using-angular-1-dot-x-with-es6-and-webpack/
+StackOverflow of Mix Angular & AngularJS: https://stackoverflow.com/questions/46564658/import-angularjs-modules-with-webpack
 
 https://medium.com/@narthur157/how-to-modernized-angularjs-1-5-with-es6-webpack-mocha-sass-and-components-1babb45a0381
